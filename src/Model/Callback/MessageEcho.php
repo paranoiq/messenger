@@ -27,7 +27,7 @@ class MessageEcho extends Message
      * @param bool        $isEcho
      * @param int|null    $appId
      * @param string      $messageId
-     * @param int         $sequence
+     * @param int|null    $sequence
      * @param string|null $metadata
      * @param string|null $text
      * @param string|null $quickReply
@@ -37,7 +37,7 @@ class MessageEcho extends Message
         bool $isEcho,
         ?int $appId,
         string $messageId,
-        int $sequence,
+        ?int $sequence = null,
         ?string $metadata = null,
         ?string $text = null,
         ?string $quickReply = null,

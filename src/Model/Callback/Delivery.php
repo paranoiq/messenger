@@ -12,7 +12,7 @@ class Delivery
     protected $watermark;
 
     /**
-     * @var int
+     * @var int|null
      */
     protected $sequence;
 
@@ -24,11 +24,11 @@ class Delivery
     /**
      * Delivery constructor.
      *
-     * @param array $messageIds
-     * @param int   $watermark
-     * @param int   $sequence
+     * @param array    $messageIds
+     * @param int      $watermark
+     * @param int|null $sequence
      */
-    public function __construct(int $watermark, int $sequence, array $messageIds = [])
+    public function __construct(int $watermark, ?int $sequence, array $messageIds = [])
     {
         $this->watermark = $watermark;
         $this->sequence = $sequence;
@@ -44,9 +44,9 @@ class Delivery
     }
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getSequence(): int
+    public function getSequence(): ?int
     {
         return $this->sequence;
     }

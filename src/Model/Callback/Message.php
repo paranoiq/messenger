@@ -12,7 +12,7 @@ class Message
     protected $messageId;
 
     /**
-     * @var int
+     * @var int|null
      */
     protected $sequence;
 
@@ -39,16 +39,16 @@ class Message
     /**
      * Message constructor.
      *
-     * @param string $messageId
-     * @param int    $sequence
-     * @param string $text
-     * @param string $quickReply
-     * @param array  $attachments
-     * @param array  $entities
+     * @param string   $messageId
+     * @param int|null $sequence
+     * @param string   $text
+     * @param string   $quickReply
+     * @param array    $attachments
+     * @param array    $entities
      */
     public function __construct(
         string $messageId,
-        int $sequence,
+        ?int $sequence = null,
         ?string $text = null,
         ?string $quickReply = null,
         array $attachments = [],
@@ -71,9 +71,9 @@ class Message
     }
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getSequence(): int
+    public function getSequence(): ?int
     {
         return $this->sequence;
     }

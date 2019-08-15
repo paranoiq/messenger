@@ -12,7 +12,7 @@ class Read
     protected $watermark;
 
     /**
-     * @var int
+     * @var int|null
      */
     protected $sequence;
 
@@ -20,9 +20,9 @@ class Read
      * Read constructor.
      *
      * @param int $watermark
-     * @param int $sequence
+     * @param int|null $sequence
      */
-    public function __construct(int $watermark, int $sequence)
+    public function __construct(int $watermark, ?int $sequence)
     {
         $this->watermark = $watermark;
         $this->sequence = $sequence;
@@ -37,9 +37,9 @@ class Read
     }
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getSequence(): int
+    public function getSequence(): ?int
     {
         return $this->sequence;
     }
