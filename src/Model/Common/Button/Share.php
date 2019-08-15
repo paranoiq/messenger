@@ -7,6 +7,9 @@ namespace Kerox\Messenger\Model\Common\Button;
 use Kerox\Messenger\Helper\UtilityTrait;
 use Kerox\Messenger\Model\Message\Attachment\Template\GenericTemplate;
 
+/**
+ * @deprecated
+ */
 class Share extends AbstractButton
 {
     use UtilityTrait;
