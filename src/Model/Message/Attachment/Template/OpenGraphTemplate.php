@@ -6,6 +6,9 @@ namespace Kerox\Messenger\Model\Message\Attachment\Template;
 
 use Kerox\Messenger\Model\Message\Attachment\Template;
 
+/**
+ * @deprecated
+ */
 class OpenGraphTemplate extends Template
 {
     /**
