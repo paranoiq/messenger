@@ -7,6 +7,9 @@ namespace Kerox\Messenger\Model\Message\Attachment\Template;
 use Kerox\Messenger\Exception\InvalidKeyException;
 use Kerox\Messenger\Model\Message\Attachment\Template;
 
+/**
+ * @deprecated
+ */
 class ListTemplate extends Template
 {
     public const TOP_ELEMENT_STYLE_LARGE = 'large';
