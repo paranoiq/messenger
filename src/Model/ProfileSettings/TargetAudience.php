@@ -13,9 +13,9 @@ class TargetAudience implements \JsonSerializable
     use UtilityTrait;
     use ValidatorTrait;
 
-    private const AUDIENCE_TYPE_ALL = 'all';
-    private const AUDIENCE_TYPE_CUSTOM = 'custom';
-    private const AUDIENCE_TYPE_NONE = 'none';
+    public const AUDIENCE_TYPE_ALL = 'all';
+    public const AUDIENCE_TYPE_CUSTOM = 'custom';
+    public const AUDIENCE_TYPE_NONE = 'none';
 
     /**
      * @var string
