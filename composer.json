@@ -1,7 +1,7 @@
 {
-  "name": "kerox/messenger",
+  "name": "paranoiq/messenger",
   "type": "library",
-  "description": "PHP Library to interact with Facebook Messenger Platform",
+  "description": "PHP Library to interact with Facebook Messenger Platform (fork of kerox/messenger)",
   "keywords": [
     "facebook",
     "messenger",
