@@ -154,6 +154,6 @@ class Message
         $attachments = $callbackData['attachments'] ?? [];
         $entities = $callbackData['nlp']['entities'] ?? [];
 
-        return new self($callbackData['mid'], $callbackData['seq'], $text, $quickReply, $attachments, $entities);
+        return new self($callbackData['mid'], $callbackData['seq'] ?? null, $text, $quickReply, $attachments, $entities);
     }
 }

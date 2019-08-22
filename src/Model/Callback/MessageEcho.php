@@ -91,7 +91,7 @@ class MessageEcho extends Message
             true,
             $appId,
             $callbackData['mid'],
-            $callbackData['seq'],
+            $callbackData['seq'] ?? null,
             $metadata,
             $text,
             $quickReply,
